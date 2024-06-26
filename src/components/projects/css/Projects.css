@@ -1,0 +1,87 @@
+@import './../../Global.css';
+
+@import './Details.css';
+@import './MainImage.css';
+@import './ImageCarousel.css';
+@import './Modal.css';
+
+.Projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.right-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  background-color: var(--nav-background);
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  height: 80vh;
+}
+
+.left-container {
+  position: absolute;
+  left: -65px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  height: auto;
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.text-container {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 100%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .Projects-container {
+    flex-direction: column;
+  }
+
+  .right-container {
+    flex-direction: column;
+    height: auto; 
+  }
+
+  .left-container {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .details {
+    padding: 10px;
+  }
+}

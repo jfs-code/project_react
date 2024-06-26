@@ -1,0 +1,12 @@
+@import './../../Global.css';
+
+.main-image {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
