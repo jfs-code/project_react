@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/Details.css';
 
 const Details = ({ title, description, onButtonClick }) => {
     return (

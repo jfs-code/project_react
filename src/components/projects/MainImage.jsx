@@ -1,5 +1,5 @@
-// MainImage.jsx
 import React from 'react';
+import './css/MainImage.css';
 
 const MainImage = ({ src }) => {
     return (

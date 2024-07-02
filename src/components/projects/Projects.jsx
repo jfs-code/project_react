@@ -35,12 +35,12 @@ const images = [
 
     return (
         <div className="Projects-container">
-            <div className="right-container">
-                <div className="left-container">
+            <div className="container">
+                <div className="right-container">
                     <MainImage src={selectedImage} />
                     <ImageCarousel images={images} onImageClick={handleImageClick} />
                 </div>
-                <div className="text-container">
+                <div className="left-container">
                     <Details
                         title="Product Title"
                         description="This is a description of the product."

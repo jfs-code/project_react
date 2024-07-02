@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './css/Projects.css';
+import './css/ImageCarousel.css';
 
 const ImageCarousel = ({ images, onImageClick }) => {
     return (

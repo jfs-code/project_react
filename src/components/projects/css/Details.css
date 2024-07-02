@@ -8,7 +8,7 @@
     justify-content: flex-start;
     text-align: left;
   }
-  
+
   .details h1 {
     margin-bottom: 20px;
     color: var(--pink);
@@ -20,12 +20,6 @@
     line-height: 1.5;
     color: var(--pink);
     text-align: left;
-  }
-  
-  .details-button {
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
   }
   
   .details button {
@@ -42,4 +36,23 @@
   .details button:hover {
     color: var(--dark-Green);
     background-color: var(--pink);
+  }
+
+  @media (max-width: 768px) {
+    .details {
+      padding: 10px;
+    }
+  
+    .details h1 {
+      font-size: 24px; 
+    }
+  
+    .details p {
+      font-size: 14px; 
+    }
+  
+    .details button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+    }
   }

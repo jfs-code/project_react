@@ -39,3 +39,18 @@
     border: 1px solid var(--dark-Green);
     border-radius: 5px;
   }
+
+  @media (max-width: 768px) {
+    .image-carousel {
+      padding: 5px; 
+    }
+  
+    .carousel-inner {
+      gap: 5px; 
+      padding: 5px;
+    }
+  
+    .thumbnail {
+      min-width: 60px; 
+    }
+  }
